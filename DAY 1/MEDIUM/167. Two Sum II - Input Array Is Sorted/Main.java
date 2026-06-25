@@ -2,7 +2,6 @@ import java.util.Arrays;
 
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
-        // TODO: Implement your logic here
 
         int index1 = 0;
         int index2 = numbers.length - 1;
@@ -16,7 +15,7 @@ class Solution {
                 index2--;
 
         }
-        return new int[] { index1+1, index2+1 };
+        return new int[] { index1 + 1, index2 + 1 };
 
     }
 }
