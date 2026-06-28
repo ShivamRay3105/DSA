@@ -20,32 +20,32 @@ class Solution {
 
             }
         }
+
         return false;
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
         Solution sol = new Solution();
 
-        // Input
-        int n = sc.nextInt();
-        int[] nums = new int[n];
+        // Test Case 1
+        int[] nums1 = { 1, 2, 3, 1 };
+        int k1 = 3;
+        System.out.println("Test Case 1: " + sol.containsNearbyDuplicate(nums1, k1));
+        // Expected: true
 
-        for (int i = 0; i < n; i++) {
-            nums[i] = sc.nextInt();
-        }
+        // Test Case 2
+        int[] nums2 = { 1, 0, 1, 1 };
+        int k2 = 1;
+        System.out.println("Test Case 2: " + sol.containsNearbyDuplicate(nums2, k2));
+        // Expected: true
 
-        int k = sc.nextInt();
-
-        // Function call
-        boolean ans = sol.containsNearbyDuplicate(nums, k);
-
-        // Output
-        System.out.println(ans);
-
-        sc.close();
+        // Test Case 3
+        int[] nums3 = { 1, 2, 3, 1, 2, 3 };
+        int k3 = 2;
+        System.out.println("Test Case 3: " + sol.containsNearbyDuplicate(nums3, k3));
+        // Expected: false
     }
 }
