@@ -28,5 +28,8 @@ class Solution {
 
         // first apply binary search to find the target value
         // then traverse left and right to find the first and last position of the target value
+
+        // but this solution is O(n) in worst case
+
     }
 }
