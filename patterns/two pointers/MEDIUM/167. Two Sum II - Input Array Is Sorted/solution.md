@@ -26,7 +26,10 @@ traverse while right reaches end of array
          result[0] = left+1;
         result[1] = right+1;
         break;
-    else if (sum < target) left++
-    else right++
+
+    else if (sum < target) left++ //  means right number is bigger than current number and need to check further
+
+
+    else right++ // means the left number is bigger than the current left and increment it to match the target
 
 return result
